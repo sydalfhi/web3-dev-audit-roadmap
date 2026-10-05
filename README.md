@@ -2,7 +2,7 @@
 
 Roadmap pribadi untuk jadi Web3 developer yang paham audit smart contract.
 
-🔗 **Live:** https://USERNAME.github.io/web3-roadmap
+🔗 **Live:** [https://USERNAME.github.io/web3-roadmap](https://sydalfhi.github.io/web3-dev-audit-roadmap/)
 
 ## Fase
 
@@ -13,13 +13,10 @@ Roadmap pribadi untuk jadi Web3 developer yang paham audit smart contract.
 5. Security & audit
 6. Hackathon, kontes audit, dan kerja
 
-## Cara pakai
-
-Buka `index.html` di browser, atau lihat versi live di atas.
 
 ## Progres
 
-- [x] Solidity dasar, Hardhat, ERC-20
+- [x] Solidity dasar, Hardhat, ERC-20, ethers js basic
 - [ ] ERC-721 / ERC-1155
 - [ ] Foundry
 - [ ] dApp pertama di testnet
