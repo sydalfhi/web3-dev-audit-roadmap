@@ -1,8 +1,8 @@
-# Web3 Roadmap
+# Personal Web3 Roadmap
 
 Roadmap pribadi untuk jadi Web3 developer yang paham audit smart contract.
 
-🔗 **Live:** [https://USERNAME.github.io/web3-roadmap](https://sydalfhi.github.io/web3-dev-audit-roadmap/)
+🔗 **Live:** [https://sydalfhi.github.io/web3-dev-audit-roadmap/](https://sydalfhi.github.io/web3-dev-audit-roadmap/)
 
 ## Fase
 
