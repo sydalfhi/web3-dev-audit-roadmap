@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap Web3 Dev + Auditor</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#EDF1F7;--ink:#14213D;--mut:#5B6785;--line:#CBD3E3;--c1:#3B4CCA;--c2:#0F8B8D;--c3:#C2410C;--c4:#7C3AED;--c5:#B4231F;--c6:#15803D}
+  body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif}
+  h1,h2,h3,.disp{font-family:'Bricolage Grotesque','IBM Plex Sans',sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px}
+  .tick::before{content:"";display:inline-block;width:.9rem;height:.9rem;border:2px solid currentColor;border-radius:4px;margin-right:.55rem;vertical-align:-2px;opacity:.7}
+  .gantt{display:grid;grid-template-columns:130px repeat(18,minmax(0,1fr));gap:6px 0;align-items:center}
+  .bar{border-radius:8px;color:#fff;font-size:.72rem;font-weight:600;padding:.4rem .5rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .wk{font-size:.65rem;color:var(--mut);text-align:center;border-left:1px dashed var(--line)}
+</style>
+</head>
+<body class="antialiased">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+
+  <!-- HERO -->
+  <header class="mb-10">
+    <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Roadmap Web3 Developer<br>yang Paham Audit</h1>
+    <p class="mt-4 text-lg max-w-2xl" style="color:var(--mut)">Dari ERC-721 sampai kontes audit pertama. Jalur utama: bangun dApp dulu supaya cepat dapat pengalaman kerja, sambil memperdalam Solidity dan keamanan lewat Foundry.</p>
+  </header>
+
+  <!-- POSISI SEKARANG -->
+  <section class="card p-5 mb-8 flex flex-wrap items-center gap-3">
+    <span class="disp font-bold mr-2">Posisi kamu sekarang</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-emerald-100 text-emerald-800">Solidity dasar</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-emerald-100 text-emerald-800">Hardhat</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-emerald-100 text-emerald-800">ERC-20</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-amber-100 text-amber-800">ERC-721 (sedang jalan)</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-amber-100 text-amber-800">ethers.js (baru 1x)</span>
+    <span class="px-3 py-1 rounded-full text-sm bg-slate-200 text-slate-700">Docker</span>
+  </section>
+
+  <!-- DIAGRAM ALUR (SVG statis) -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Peta besar</h2>
+    <div class="card p-4 overflow-x-auto">
+      <svg viewBox="0 0 980 190" class="min-w-[820px] w-full" role="img" aria-label="Alur enam fase roadmap">
+        <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#5B6785"/></marker></defs>
+        <g font-family="IBM Plex Sans, sans-serif" text-anchor="middle">
+          <line x1="143" y1="70" x2="177" y2="70" stroke="#5B6785" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="303" y1="70" x2="337" y2="70" stroke="#5B6785" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="463" y1="70" x2="497" y2="70" stroke="#5B6785" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="623" y1="70" x2="657" y2="70" stroke="#5B6785" stroke-width="2" marker-end="url(#ar)"/>
+          <line x1="783" y1="70" x2="817" y2="70" stroke="#5B6785" stroke-width="2" marker-end="url(#ar)"/>
+
+          <rect x="17" y="30" width="126" height="80" rx="12" fill="#3B4CCA"/>
+          <text x="80" y="62" fill="#fff" font-size="13" font-weight="600">Fase 1</text>
+          <text x="80" y="82" fill="#fff" font-size="12">ERC-721 &amp; 1155</text>
+          <text x="80" y="98" fill="#dfe3ff" font-size="11">minggu 1-2</text>
+
+          <rect x="177" y="30" width="126" height="80" rx="12" fill="#0F8B8D"/>
+          <text x="240" y="62" fill="#fff" font-size="13" font-weight="600">Fase 2</text>
+          <text x="240" y="82" fill="#fff" font-size="12">Foundry</text>
+          <text x="240" y="98" fill="#d4f3f3" font-size="11">minggu 3-5</text>
+
+          <rect x="337" y="30" width="126" height="80" rx="12" fill="#C2410C"/>
+          <text x="400" y="62" fill="#fff" font-size="13" font-weight="600">Fase 3</text>
+          <text x="400" y="82" fill="#fff" font-size="12">dApp Frontend</text>
+          <text x="400" y="98" fill="#ffe3d3" font-size="11">minggu 5-8</text>
+
+          <rect x="497" y="30" width="126" height="80" rx="12" fill="#7C3AED"/>
+          <text x="560" y="62" fill="#fff" font-size="13" font-weight="600">Fase 4</text>
+          <text x="560" y="82" fill="#fff" font-size="12">Pola DeFi</text>
+          <text x="560" y="98" fill="#eadcff" font-size="11">minggu 8-12</text>
+
+          <rect x="657" y="30" width="126" height="80" rx="12" fill="#B4231F"/>
+          <text x="720" y="62" fill="#fff" font-size="13" font-weight="600">Fase 5</text>
+          <text x="720" y="82" fill="#fff" font-size="12">Security</text>
+          <text x="720" y="98" fill="#ffd9d7" font-size="11">minggu 10-16</text>
+
+          <rect x="817" y="30" width="126" height="80" rx="12" fill="#15803D"/>
+          <text x="880" y="62" fill="#fff" font-size="13" font-weight="600">Fase 6</text>
+          <text x="880" y="82" fill="#fff" font-size="12">Kontes &amp; Kerja</text>
+          <text x="880" y="98" fill="#d3f5df" font-size="11">minggu 14+</text>
+
+          <!-- jalur paralel -->
+          <path d="M80 130 V150 H880 V130" fill="none" stroke="#5B6785" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="480" y="173" fill="#5B6785" font-size="12">Sepanjang jalan: tiap nulis kontrak, tanya "gimana ini bisa dibobol?" (kacamata auditor) dan simpan semuanya di GitHub</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- GANTT -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-1">Tiga jalur berjalan bersamaan</h2>
+    <p class="mb-4" style="color:var(--mut)">Estimasi 18 minggu. Geser sesuai ritme kamu, urutannya yang penting.</p>
+    <div class="card p-4 overflow-x-auto">
+      <div class="gantt min-w-[760px]">
+        <div></div>
+        <div class="wk">1</div><div class="wk">2</div><div class="wk">3</div><div class="wk">4</div><div class="wk">5</div><div class="wk">6</div><div class="wk">7</div><div class="wk">8</div><div class="wk">9</div><div class="wk">10</div><div class="wk">11</div><div class="wk">12</div><div class="wk">13</div><div class="wk">14</div><div class="wk">15</div><div class="wk">16</div><div class="wk">17</div><div class="wk">18</div>
+
+        <div class="text-sm font-semibold">Kontrak</div>
+        <div class="bar" style="grid-column:2/4;background:var(--c1)">ERC-721/1155</div>
+        <div class="bar" style="grid-column:4/7;background:var(--c2)">Foundry</div>
+        <div class="bar" style="grid-column:9/14;background:var(--c4);grid-row:3">Pola DeFi &amp; proxy</div>
+
+        <div class="text-sm font-semibold" style="grid-row:4">Frontend</div>
+        <div class="bar" style="grid-column:6/10;background:var(--c3);grid-row:4">dApp (ethers v6 / wagmi)</div>
+
+        <div class="text-sm font-semibold" style="grid-row:5">Security</div>
+        <div class="bar" style="grid-column:11/17;background:var(--c5);grid-row:5">Ethernaut, DVDeFi, Slither</div>
+
+        <div class="text-sm font-semibold" style="grid-row:6">Karier</div>
+        <div class="bar" style="grid-column:9/12;background:#64748b;grid-row:6">Hackathon</div>
+        <div class="bar" style="grid-column:15/19;background:var(--c6);grid-row:6">Kontes audit + lamar kerja</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASE DETAIL -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-5">Detail tiap fase</h2>
+    <div class="space-y-5">
+
+      <article class="card p-6" style="border-left:8px solid var(--c1)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 1: ERC-721 dan standar token lain</h3><span class="text-sm" style="color:var(--mut)">Minggu 1-2</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">ERC-721: ownerOf, approve, setApprovalForAll, safeTransferFrom</span></li>
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">Metadata dan tokenURI (IPFS / on-chain)</span></li>
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">ERC-1155 untuk multi-token</span></li>
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">ERC-2981 royalti, ERC-4626 vault (kenalan saja)</span></li>
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">Pahami callback onERC721Received dan risiko reentrancy-nya</span></li>
+          <li class="tick" style="color:var(--c1)"><span class="text-slate-800">Baca source OpenZeppelin, jangan cuma import</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> kontrak NFT mint + whitelist (Merkle) dengan test Hardhat.</p>
+      </article>
+
+      <article class="card p-6" style="border-left:8px solid var(--c2)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 2: Pindah ke Foundry</h3><span class="text-sm" style="color:var(--mut)">Minggu 3-5</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">Install, forge init, struktur src / test / script</span></li>
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">Test dalam Solidity: assert, expectRevert, expectEmit</span></li>
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">Cheatcodes: vm.prank, vm.deal, vm.warp, vm.roll</span></li>
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">Fuzz test dan invariant test</span></li>
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">Fork mainnet (vm.createSelectFork) dan anvil</span></li>
+          <li class="tick" style="color:var(--c2)"><span class="text-slate-800">forge script untuk deploy, cast untuk interaksi</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> porting kontrak ERC-20 dan ERC-721 lama kamu dari Hardhat ke Foundry, lengkap dengan fuzz test. Hardhat tetap boleh dipakai untuk deploy.</p>
+      </article>
+
+      <article class="card p-6" style="border-left:8px solid var(--c3)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 3: dApp / Frontend (jalur tercepat dapat kerja)</h3><span class="text-sm" style="color:var(--mut)">Minggu 5-8</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Ulang ethers.js v6: Provider, Signer, Contract, event listener</span></li>
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Kenalan viem + wagmi (standar baru di industri)</span></li>
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Next.js + RainbowKit / WalletConnect</span></li>
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Handle error: reject, salah network, gas, tx pending</span></li>
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Baca data on-chain: multicall, The Graph / indexer</span></li>
+          <li class="tick" style="color:var(--c3)"><span class="text-slate-800">Deploy ke testnet (Sepolia) dan Vercel</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> dApp NFT mint dan staking sederhana yang live di testnet, repo rapi dengan README.</p>
+      </article>
+
+      <article class="card p-6" style="border-left:8px solid var(--c4)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 4: Pola kontrak yang sering dipakai</h3><span class="text-sm" style="color:var(--mut)">Minggu 8-12</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">Proxy / upgradeable (UUPS, Transparent), storage layout</span></li>
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">Access control, pausable, timelock, multisig</span></li>
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">AMM sederhana ala Uniswap v2</span></li>
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">Staking dan reward distribution</span></li>
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">Lending dasar (Compound / Aave sebagai bahan baca)</span></li>
+          <li class="tick" style="color:var(--c4)"><span class="text-slate-800">Oracle: Chainlink, TWAP, dan risikonya</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> mini-AMM atau staking dengan test lengkap, ditulis ulang dari nol tanpa copy-paste.</p>
+      </article>
+
+      <article class="card p-6" style="border-left:8px solid var(--c5)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 5: Keamanan dan audit</h3><span class="text-sm" style="color:var(--mut)">Minggu 10-16</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Kerentanan: reentrancy, access control, precision, oracle manipulation, front-running, flash loan</span></li>
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Selesaikan Ethernaut</span></li>
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Damn Vulnerable DeFi (pakai Foundry)</span></li>
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Tools: Slither, Echidna, Foundry invariant</span></li>
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Baca 2-3 laporan audit publik per minggu (Code4rena, Sherlock)</span></li>
+          <li class="tick" style="color:var(--c5)"><span class="text-slate-800">Coba AI untuk bantu cari bug, lalu verifikasi sendiri dengan PoC</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> catatan temuan pribadi dan beberapa PoC exploit di GitHub.</p>
+      </article>
+
+      <article class="card p-6" style="border-left:8px solid var(--c6)">
+        <div class="flex flex-wrap justify-between gap-2"><h3 class="text-xl font-bold">Fase 6: Portofolio, kontes, dan kerja</h3><span class="text-sm" style="color:var(--mut)">Minggu 14 dan seterusnya</span></div>
+        <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-2 mt-4 text-sm">
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">Hackathon online (ETHGlobal, Devfolio), menang atau tidak tetap jadi portofolio</span></li>
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">Kontes audit: Code4rena, Sherlock, Cantina (mulai dari kontes kecil)</span></li>
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">Lamar posisi dApp / Frontend / Smart Contract Dev junior</span></li>
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">GitHub rapi: README, test, deploy address</span></li>
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">Aktif di Twitter/X dan Discord komunitas Web3</span></li>
+          <li class="tick" style="color:var(--c6)"><span class="text-slate-800">Manfaatkan bahasa Inggris, kerja remote lintas negara</span></li>
+        </ul>
+        <p class="mt-4 text-sm"><b>Hasil:</b> 1 kontes audit selesai, 2-3 dApp live, dan lamaran pertama terkirim.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ATURAN MAIN -->
+  <section class="grid md:grid-cols-2 gap-5 mb-12">
+    <div class="card p-6">
+      <h3 class="text-xl font-bold mb-3">Aturan main</h3>
+      <ul class="space-y-2 text-sm list-disc pl-5">
+        <li>Satu sesi AI, cek tiap file yang dibuat. Kebiasaan ini sudah skill auditor.</li>
+        <li>Tulis kontrak inti sendiri dulu, baru minta AI review. Bukan sebaliknya.</li>
+        <li>Tool baru (opencode, dsb.) cukup dicoba 20% waktu, jangan jadi tujuan.</li>
+        <li>Mulai kontes sebelum merasa siap. Hasil awal kosong itu normal.</li>
+      </ul>
+    </div>
+    <div class="card p-6">
+      <h3 class="text-xl font-bold mb-3">Target realistis</h3>
+      <ul class="space-y-2 text-sm list-disc pl-5">
+        <li>Bulan 1: standar token selesai, Foundry jalan.</li>
+        <li>Bulan 2: dApp pertama live di testnet.</li>
+        <li>Bulan 3-4: pola DeFi dan kerentanan dasar.</li>
+        <li>Bulan 4-5: kontes audit pertama dan lamaran kerja.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="text-sm pb-6" style="color:var(--mut)">Jalur utama: dApp dev dulu, audit sebagai pembeda. Satu jalur, saling menguatkan.</footer>
+</div>
+</body>
+</html>
